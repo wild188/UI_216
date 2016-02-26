@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package ui_216;
 
 /**
  *
- * @author Billy
+ * @author Owner
  */
-public class Login_Controler {
+public class LoginController {
     
 }
