@@ -7,6 +7,9 @@ package ui_216;
 public class UI_216 {
 
     public static void main(String[] args) {
+        System.out.println("Running");
+        LoginController lc = new LoginController();
+        
     }
     
 }

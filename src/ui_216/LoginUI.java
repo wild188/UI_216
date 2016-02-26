@@ -5,6 +5,8 @@
  */
 package ui_216;
 
+import java.awt.Color;
+
 /**
  *
  * @author Owner
@@ -17,8 +19,25 @@ public class LoginUI extends javax.swing.JFrame {
     
     private LoginController controller;
     
-    public LoginUI() {
+    public LoginUI(LoginController c){
+        this();
+        controller = c;
+    }
+    
+    private LoginUI() {
+        //replaceMain(null);
         initComponents();
+    }
+    
+    public void invalidLogin(){
+        //display invalid login information 
+        InvalidLabel.setText("Invalid Login");
+        InvalidLabel.setForeground(Color.RED);
+    }
+    
+    public void validLogin(){
+        //Do we need to do anything here?
+        InvalidLabel.setText("Yay!!!");
     }
 
     /**
@@ -97,23 +116,15 @@ public class LoginUI extends javax.swing.JFrame {
         String pass = PasswordField.getText();
         String userID = UserIDField.getText();
         
-        if(pass == null){
+        if(pass.isEmpty()){
             //send error message requiring password
             return;
-        } else if(userID == null){
+        } else if(userID.isEmpty()){
             //sent error message requiring userID
             return;
         }
         
-        boolean verified = controller.onLogin(userID, pass);
-        if(verified){
-            //Yay! does the UI have to do anything or just go away?
-        } else {
-            //display invalid login information 
-            InvalidLabel.setText("Invalid Login");
-            
-        }
-        
+        controller.onLoginAttempt(userID, pass);
     }//GEN-LAST:event_LoginButtonActionPerformed
 
     /**
@@ -150,6 +161,39 @@ public class LoginUI extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void replaceMain(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new LoginUI().setVisible(true);
+            }
+        });
+    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel IDlabel;
