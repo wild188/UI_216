@@ -24,18 +24,32 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace pref="100" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="enterItemIDLabel" min="-2" pref="101" max="-2" attributes="0"/>
-                  <Component id="customerIDLabel" min="-2" pref="101" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="enterItemIDLabel" min="-2" pref="101" max="-2" attributes="0"/>
+                          <Component id="customerIDLabel" min="-2" pref="101" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="cancelSaleButton" min="-2" pref="142" max="-2" attributes="0"/>
+                      <EmptySpace pref="33" max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="subtotalLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="taxLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="totalLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="1035" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="subtotalLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="taxLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
@@ -49,11 +63,6 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="318" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="itemIdField" alignment="0" min="-2" pref="371" max="-2" attributes="0"/>
@@ -64,10 +73,38 @@
                                   <Component id="enterItemButton" max="32767" attributes="0"/>
                                   <Component id="enterCustomerIDButton" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="40" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="318" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="returnItemButton" min="-2" pref="150" max="-2" attributes="0"/>
+                                          <Component id="purchaseItemButton" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="rentItemButton" min="-2" pref="150" max="-2" attributes="0"/>
+                                          <Component id="removeItemButton1" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="291" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
-                      <Component id="jScrollPane1" min="-2" pref="702" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="selectPaymentTypeButton" min="-2" pref="150" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="checkoutButton" min="-2" pref="150" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jScrollPane1" min="-2" pref="702" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -76,7 +113,8 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
@@ -90,6 +128,16 @@
                           <Component id="enterItemIDLabel" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
                           <Component id="enterItemButton" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="purchaseItemButton" alignment="3" min="-2" pref="149" max="-2" attributes="0"/>
+                          <Component id="rentItemButton" alignment="3" min="-2" pref="149" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="returnItemButton" alignment="3" min="-2" pref="149" max="-2" attributes="0"/>
+                          <Component id="removeItemButton1" alignment="3" min="-2" pref="149" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jTextField1" alignment="3" min="-2" pref="57" max="-2" attributes="0"/>
@@ -98,22 +146,34 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="SubtotalField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="subtotalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="SubtotalField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="subtotalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TaxField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="taxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TotalField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="totalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cancelSaleButton" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="selectPaymentTypeButton" alignment="3" min="-2" pref="149" max="-2" attributes="0"/>
+                          <Component id="checkoutButton" alignment="3" min="-2" pref="149" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TaxField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="taxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TotalField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="totalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="93" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -222,6 +282,41 @@
     <Component class="javax.swing.JButton" name="enterCustomerIDButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Enter Customer ID"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="purchaseItemButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Purchase Item"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="returnItemButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Return Item"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="selectPaymentTypeButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Select Payment Type"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="rentItemButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Rent Item"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="cancelSaleButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancel Sale"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="removeItemButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Return Item"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="checkoutButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Checkout"/>
       </Properties>
     </Component>
   </SubComponents>
