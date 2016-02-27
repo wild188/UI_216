@@ -46,7 +46,7 @@ public class PointOfSaleUI extends javax.swing.JFrame {
         itemIdField = new javax.swing.JTextField();
         enterItemIDLabel = new javax.swing.JLabel();
         enterItemButton = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        customerIdTextField = new javax.swing.JTextField();
         customerIDLabel = new javax.swing.JLabel();
         enterCustomerIDButton = new javax.swing.JButton();
         purchaseItemButton = new javax.swing.JButton();
@@ -104,13 +104,9 @@ public class PointOfSaleUI extends javax.swing.JFrame {
 
         totalLabel.setText("Total");
 
-        itemIdField.setText("jTextField1");
-
         enterItemIDLabel.setText("Item ID:");
 
         enterItemButton.setText("Enter Item");
-
-        jTextField1.setText("jTextField1");
 
         customerIDLabel.setText("Cutomer ID:");
 
@@ -167,7 +163,7 @@ public class PointOfSaleUI extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(itemIdField, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(customerIdTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(56, 56, 56)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(enterItemButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -221,7 +217,7 @@ public class PointOfSaleUI extends javax.swing.JFrame {
                             .addComponent(removeItemButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(customerIdTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(customerIDLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(enterCustomerIDButton, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -292,13 +288,13 @@ public class PointOfSaleUI extends javax.swing.JFrame {
     private javax.swing.JButton cancelSaleButton;
     private javax.swing.JButton checkoutButton;
     private javax.swing.JLabel customerIDLabel;
+    private javax.swing.JTextField customerIdTextField;
     private javax.swing.JButton enterCustomerIDButton;
     private javax.swing.JButton enterItemButton;
     private javax.swing.JLabel enterItemIDLabel;
     private javax.swing.JTextField itemIdField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTable lineItemTable;
     private javax.swing.JButton purchaseItemButton;
     private javax.swing.JButton removeItemButton1;
