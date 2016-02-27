@@ -34,7 +34,7 @@ public class LoginController {
     
     private boolean verifyLoginInfo(String userId, String password){
         //will contact session to verify
-        return false;
+        return true;
     }
     
     private void switchToPOS(String id, String pass){
