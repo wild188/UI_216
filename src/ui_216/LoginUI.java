@@ -1,22 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ui_216;
 
 import java.awt.Color;
 
-/**
- *
- * @author Owner
- */
 public class LoginUI extends javax.swing.JFrame {
-
-    /**
-     * Creates new form LoginUI
-     */
-    
     private LoginController controller;
     
     public LoginUI(LoginController c){
@@ -26,7 +12,7 @@ public class LoginUI extends javax.swing.JFrame {
     
     private LoginUI() {
         //replaceMain(null);
-        initComponents();
+        initComponents();       //initialize text fields, and button
     }
     
     public void invalidLogin(){
@@ -36,8 +22,7 @@ public class LoginUI extends javax.swing.JFrame {
     }
     
     public void validLogin(){
-        //Do we need to do anything here?
-        InvalidLabel.setText("Yay!!!");
+        InvalidLabel.setText("Yay!!!");     //login successful
     }
 
     /**

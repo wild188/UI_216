@@ -1,30 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ui_216;
 
-/**
- *
- * @author Owner
- */
 public class LoginController {
-    
-    //private Session loginSession;
-    private LoginUI gui;
+    private LoginUI gui;            //create a LoginUI object as data field
     
     
     public LoginController(){
-        gui = new LoginUI(this);
-        gui.setVisible(true);
+        gui = new LoginUI(this);    //pass the LoginController to the gui object
+        gui.setVisible(true);       //display login ui
     }
     
     public void onLoginAttempt(String userID, String password){
         //recieves login information from UI and passes it on to be verified
         boolean verified = verifyLoginInfo(userID, password);
         
-        if(verified){
+        if(verified){               //verifies login info to start POS ui
             gui.validLogin();
             switchToPOS(userID, password);
         } else{
