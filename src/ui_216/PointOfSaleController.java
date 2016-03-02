@@ -11,14 +11,14 @@ package ui_216;
  */
 public class PointOfSaleController {
     
-    private PointOfSaleUI pos;
+    private PointOfSaleUI pos;          //data fields to be passed to the session
     private String userID;
-    private String password; // not sure if we need this
+    private String password; 
     
     public PointOfSaleController(String id, String pass){
         userID = id;
         password = pass;
         pos = new PointOfSaleUI(this);
-        pos.setVisible(true);
+        pos.setVisible(true);            //start POS ui
     }
 }

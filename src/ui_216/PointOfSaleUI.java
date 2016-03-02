@@ -107,6 +107,11 @@ public class PointOfSaleUI extends javax.swing.JFrame {
         enterItemIDLabel.setText("Item ID:");
 
         enterItemButton.setText("Enter Item");
+        enterItemButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enterItemButtonActionPerformed(evt);
+            }
+        });
 
         customerIDLabel.setText("Cutomer ID:");
 
@@ -197,9 +202,7 @@ public class PointOfSaleUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(42, 42, 42)
@@ -245,6 +248,13 @@ public class PointOfSaleUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void enterItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterItemButtonActionPerformed
+        // when Enter is pressed
+        String itemID = itemIdField.getText();      //get id entered
+        //pass this to the database object to return info then pass it to the controller. 
+        
+    }//GEN-LAST:event_enterItemButtonActionPerformed
 
     /**
      * @param args the command line arguments
