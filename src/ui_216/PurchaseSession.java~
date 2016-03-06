@@ -1,0 +1,6 @@
+public class PurchaseSession {
+  
+  private Transaction mCurrent_Transaction;
+  private Transaction mFinalize_Transaction;
+  private Database mDB
+}
