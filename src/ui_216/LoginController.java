@@ -2,11 +2,15 @@ package ui_216;
 
 public class LoginController {
     private LoginUI gui;            //create a LoginUI object as data field
-    
+    private PurchaseSession model;
     
     public LoginController(){
         gui = new LoginUI(this);    //pass the LoginController to the gui object
         gui.setVisible(true);       //display login ui
+    }
+    
+    public void addModel(PurchaseSession ses){
+        model = ses;
     }
     
     public void onLoginAttempt(String userID, String password){
@@ -23,7 +27,8 @@ public class LoginController {
     
     private boolean verifyLoginInfo(String userId, String password){
         //will contact session to verify
-        return true;
+        
+        return model.login(userId, password);
     }
     
     private void switchToPOS(String id, String pass){
