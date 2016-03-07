@@ -295,7 +295,18 @@ public class PointOfSaleUI extends javax.swing.JFrame {
     public void addLineItem(String id, String name, String price, String quantity){
         modelT.addRow(new Object[]{id, name, price, quantity});
     }
-
+    
+    public void addSubtotal(String subTotal){
+        SubtotalField.setText(subTotal);
+    }
+    
+    public void addTax(String tax){
+        TaxField.setText(tax);
+    }
+    
+    public void addTotal(String total){
+        TotalField.setText(total);
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField SubtotalField;
     private javax.swing.JTextField TaxField;
