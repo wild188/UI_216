@@ -23,6 +23,18 @@ public class PointOfSaleController {
         pos.setVisible(true);            //start POS ui
     }
     
+    public PointOfSaleController(String id, String pass, PurchaseSession ses){
+        userID = id;
+        password = pass;
+        pos = new PointOfSaleUI(this);
+        pos.setVisible(true);            //start POS ui
+        setModel(ses);
+    }
+    
+    public void setModel(PurchaseSession ses){
+        model = ses;
+    }
+    
     public void addItem(String itemIDString){
         Integer id;
         Triplet itemInfo = null;
@@ -44,7 +56,7 @@ public class PointOfSaleController {
     }
     
     public void removeItem(int itemID){
-        
+        //idk man
     }
     
 }
