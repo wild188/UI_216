@@ -55,6 +55,21 @@ public class PointOfSaleController {
         
     }
     
+    private void getTotal(){
+        Double totes = model.getTotal();
+        pos.addTotal(totes.toString());
+    }
+    
+    private void getSubtotal(){
+        Double sub = model.getSubtotal();
+        pos.addSubtotal(sub.toString());
+    }
+    
+    private void getTax(){
+        Double tax = model.getTotal();
+        pos.addTax(tax.toString());
+    }
+    
     public void removeItem(int itemID){
         //idk man
     }
