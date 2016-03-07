@@ -18,7 +18,7 @@ public class PointOfSaleUI extends javax.swing.JFrame {
      * Creates new form PointOfSaleUI
      */
     private PointOfSaleUI() {
-        this.modelT = (DefaultTableModel) lineItemTable.getModel();
+        //this.modelT = (DefaultTableModel) lineItemTable.getModel();
         initComponents();
     }
     
@@ -249,7 +249,7 @@ public class PointOfSaleUI extends javax.swing.JFrame {
     private void enterItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterItemButtonActionPerformed
         // when Enter is pressed
         String itemId = itemIdField.getText();      //get id entered
-        addItem(itemId);
+        posController.addItem(itemId);
         //pass this to the database object to return info then pass it to the controller. 
         
     }//GEN-LAST:event_enterItemButtonActionPerformed
