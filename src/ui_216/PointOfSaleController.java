@@ -21,6 +21,7 @@ public class PointOfSaleController {
         password = pass;
         pos = new PointOfSaleUI(this);
         pos.setVisible(true);            //start POS ui
+        populateCashierID();
     }
     
     public PointOfSaleController(String id, String pass, PurchaseSession ses){
@@ -29,6 +30,11 @@ public class PointOfSaleController {
         pos = new PointOfSaleUI(this);
         pos.setVisible(true);            //start POS ui
         setModel(ses);
+    }
+    
+    private void populateCashierID(){
+        String cID = model.getCashierID();
+        pos.setID(cID);
     }
     
     public void setModel(PurchaseSession ses){
