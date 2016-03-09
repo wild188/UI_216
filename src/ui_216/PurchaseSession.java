@@ -1,4 +1,4 @@
-public class PurchaseSession {
+ public class PurchaseSession {
   
   private String mUserID, mPassword;
   private Transaction mCurrent_Transaction;

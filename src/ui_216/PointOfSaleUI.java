@@ -130,6 +130,11 @@ public class PointOfSaleUI extends javax.swing.JFrame {
         removeItemButton1.setText("Return Item");
 
         checkoutButton.setText("Checkout");
+        checkoutButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkoutButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -188,9 +193,12 @@ public class PointOfSaleUI extends javax.swing.JFrame {
                                     .addComponent(purchaseItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(33, 33, 33)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(rentItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(removeItemButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(241, 241, 241)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(removeItemButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(241, 241, 241))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(rentItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(81, 81, 81))))
         );
@@ -253,6 +261,10 @@ public class PointOfSaleUI extends javax.swing.JFrame {
         //pass this to the database object to return info then pass it to the controller. 
         
     }//GEN-LAST:event_enterItemButtonActionPerformed
+
+    private void checkoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkoutButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkoutButtonActionPerformed
 
     public void displayError(String message){
         JOptionPane.showMessageDialog(null, message, "InfoBox: " + "Error", JOptionPane.INFORMATION_MESSAGE);
